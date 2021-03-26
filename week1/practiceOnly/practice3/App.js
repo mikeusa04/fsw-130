@@ -1,3 +1,5 @@
+//context practice using class components
+
 import React from "react"
 
 import Header from "./Header"
