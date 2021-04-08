@@ -1,4 +1,14 @@
-/*import React from "react"
+/*Using what you have just learned about React Context, you are tasked with making a ThemeProvider context for a new application. Your goal is to build a homepage that offers a dark and a light theme. This theme can be toggled by the user.
+
+You must:
+Provide a Dark and a Light theme
+Have at least 3 display components:
+ex: Navbar, Footer, Main
+Create a ThemeProvider component that manages the themes using Context.
+
+
+
+import React from "react"
 import {useState} from "react"
 import Header from "./Header"
 import Main from "./Main"
