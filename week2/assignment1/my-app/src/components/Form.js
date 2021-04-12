@@ -27,12 +27,18 @@ class Form extends Component {
         {context => (
         <div>
         <form onSubmit={(e) => {this.addItem(e)}}>
-            <input ref={input => this.newItem = input} type="text" placeholder="movie" id="newItem"/>
+            <input
+            className="input" 
+            ref={input => this.newItem = input} 
+            type="text" 
+            placeholder="movie" 
+            id="newItem"
+            />
             <button type="submit">Add</button>
         </form>
         <ul>{
           this.state.movies.map(movie => 
-          <li key={movie}>{movie}</li>
+          <li key={movie} style={{listStyle: "none"}}>{movie}</li>
         )}
         </ul>
         </div>)}
