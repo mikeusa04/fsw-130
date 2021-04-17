@@ -1,4 +1,4 @@
-/* 
+/* REDUX IN REACT
 use redux to:
 Display an initial count.
 Display a button whose onclick action will be to increment or decrement the counter using Redux.

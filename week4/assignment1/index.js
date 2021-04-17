@@ -1,4 +1,5 @@
-/*Build a contact management system using Redux in a vanilla JavaScript environment (no React).
+/*REDUX WITHOUT REACT
+Build a contact management system using Redux in a vanilla JavaScript environment (no React).
 You should be able to dispatch actions that add a new person and remove an existing person from an array of contacts.
 The contact objects can have whatever properties you want. For example:
  {firstName: 'Mike', phone: '555-444-3333', lastName: 'Saleh', age: 24} 
