@@ -1,3 +1,5 @@
+/*this file to create add, remove, get tvshows and then export it*/
+
 function getTvShow() {
     return {
         type: "GET_SHOW"
@@ -19,9 +21,12 @@ function removeTvShow(show) {
 }
 
 function tvShowReducer(shows = [], action) {
+
     switch(action.type) {
+
         case "ADD_SHOW":
             return [...shows, action.data]
+
         case "REMOVE_SHOW": {
             const updatedArr = shows.filter(show => show.toLowerCase() !== action.data.toLowerCase())
             return updatedArr

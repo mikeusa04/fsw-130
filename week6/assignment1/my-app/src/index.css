@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(64, 155, 247);
+}
+
+.form {
+  text-align: center;
+}
+
+input {
+  background-color: white;
+  height: 2em;
+  margin: 5px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.submitButton {
+  background-color: black;
+  color: whitesmoke;
+  opacity: 2.0;
+  border: none;
+  height: 2em;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background-color: rgb(241, 7, 7);
+  color: whitesmoke;
+  opacity: 2.0;
+  border: none;
+  height: 2em;
+  font-weight: bolder;
+}
+.deleteButton:hover {
+  cursor: pointer;
+  background-color: rgb(191, 211, 231);
+  color: black;
+}

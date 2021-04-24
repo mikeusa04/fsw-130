@@ -23,12 +23,12 @@ install nodemon
 */
 
 
-
+//----------------------------- import the stor and the actions
 const store = require("./redux/store")
 const {addMovie, removeMovie, getMovie} = require("./redux/movies")
 const {addTvShow, removeTvShow, getTvShow} = require("./redux/tvShows")
 
-
+//------------------put what you want to, here individually and run the code to see the changes you have made bellow 
 store.dispatch(addMovie("Superman"))
 store.dispatch(addMovie("Braveheart"))
 store.dispatch(addMovie("The God Father"))

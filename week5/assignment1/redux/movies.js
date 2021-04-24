@@ -1,3 +1,5 @@
+/*this file to add, remove, get movies and then export it*/ 
+
 function getMovie() {
     return {
         type: "GET_MOVIE",
@@ -19,13 +21,17 @@ function removeMovie(movie) {
 }
 
 function movieReducer(movies = [], action) {
+
     switch(action.type) {
+
         case "ADD_MOVIE":
             return [...movies, action.data]
+
         case "REMOVE_MOVIE": {
             const updatedArr = movies.filter(movie => movie.toLowerCase() !== action.data.toLowerCase())
             return updatedArr
         }
+        
         case "GET_MOVIE": {
             return movies
         }

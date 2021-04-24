@@ -32,6 +32,14 @@ const addNewContact = (newInfo) => {
         payload: newInfo
     }
 };
+/*or we can use this type of function
+function addNewContact(newInfo) {
+    return {
+        type: "ADD_NEW_CONTACT",
+        payload: newInfo
+    }
+}*/
+
 
 // Action2  Remove Contact
 const removeContact = (firstName) => {
@@ -40,6 +48,27 @@ const removeContact = (firstName) => {
         payload: firstName
     }
 };
+/*or we can use this type of function
+function removeContact(firstName) {
+    return {
+        type: "REMOVE_CONTACT",
+        payload: firstName
+    }
+}*/
+
+
+// Action3 Get Contact
+const  getContact = ()  => {
+    return {
+        type: "GET_CONTACT",
+    }
+}
+/*or we can use this type of function
+function getContact() {
+    return {
+        type: "GET_CONTACT",
+    }
+}*/
 
 // Reducer to change state
 const reducer = (state = initialState, action) => {
@@ -60,6 +89,9 @@ const reducer = (state = initialState, action) => {
         case 'REMOVE_CONTACT': 
             const updatedContacts = state.filter(contact => contact.firstName !== action.payload) 
             return updatedContacts
+
+        case "GET_CONTACT": 
+                return initialState
             
         default: 
             return state;
@@ -77,6 +109,9 @@ store.dispatch(addNewContact({firstName: 'Michelle', phone: '333-999-8888', last
 
 // Dispatch to remove one Contact
 store.dispatch(removeContact('Janith'));
+
+// Dispatch to get them all
+store.dispatch(getContact());
 
 
 /*note
