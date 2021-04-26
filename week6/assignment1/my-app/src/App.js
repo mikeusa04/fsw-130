@@ -1,3 +1,15 @@
+/*Build a contact management system using Redux in React. Your redux store will be in charge of maintaining and updating your contact list.
+
+You will create actions that when sent to the reducer:
+
+add a new user to an array of contacts
+delete an existing user from the array
+The contact objects you use can have any set of properties you would like. For example:
+{name: "mike", phone: "7776665555", email: "hii...."}
+*/
+
+
+
 import React from "react"
 import {connect} from "react-redux"
 import {addContact, removeContact, setInputs} from "./redux/store"

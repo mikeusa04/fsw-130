@@ -24,7 +24,7 @@ export function setInputs(name, value) {
 }
 
 const initialState ={
-    contacts: [],
+    contacts: [], // we could do contacts:[{name: "mike", age: 21, phone: 77777, email: "hi @ yahoo.com"}] to let it show on the page at the begining the we can add to this existing object.
     name: "",
     age: "",
     phone: "",
@@ -32,7 +32,9 @@ const initialState ={
 }
 
 export function reducer(state = initialState, action) {
+
     switch(action.type) {
+
         case "ADD_CONTACT":
             return {
                 ...state,
@@ -42,19 +44,22 @@ export function reducer(state = initialState, action) {
                 phone: "",
                 email: ""
             }
+
         case "REMOVE_CONTACT":
             let newContact = [...state.contacts] 
             newContact.splice(action.payload, 1)
             return {
-                ...state,
+              ...state,
                 contacts: newContact
             }
+
         case "SET_INPUTS": 
             console.log(action.payload)
             return {
                 ...state,
                 [action.payload.name] : action.payload.value
             } 
+
         default:
             return state
     }
