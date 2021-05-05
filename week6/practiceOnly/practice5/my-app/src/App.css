@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-position-x: center;
+  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/game-of-thrones-illustration-sean-longmore-1598631176.jpeg?crop=0.669xw:1.00xh;0.0896xw,0&resize=640:*");
+}
+
+.container {
+  display: grid;  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;      
+  padding: 10px;
+  margin-left: 400px;
+  margin-right: 400px;
+  align-content: center;
+  background-color: whitesmoke;
+  opacity: 0.6;
+}
+
+.header {
+  display: grid; 
+  grid-column: 2/3;
+}
+
+.list {
+  display: grid; 
+  grid-column: 2/3;
+}
+
+.navbar {
+  text-align: center;
+  padding: 10px;
+  margin-right: 400px;
+  margin-left: 400px;
+  background-color: rgb(162, 222, 224);
+  opacity: 0.6;
+}
+
+.navlink {
+  padding: 10px;
+  font-size: 25px; 
+  margin: 10px;
+  display: block;
+}
+
+h1 {
+  text-align: center; 
+  font-size: 30px;
+   
+}
+
+h3, p {
+
+  text-align: center; 
+  font-size: 20px;
+}
+
+ul {
+  text-align: center;  
+}
+
+li {
+  text-align: center;
+  list-style-type: none; 
+  font-size: 15px; 
+}
+
+form {
+  text-align: center;
+  width: 310px;
+  padding: 10px;
+  margin: auto;
+  /*background-color: whitesmoke;*/
+}
+
+input[type='text'] {
+  width: 260px;
+  border-radius: 10px;
+  background-color: #5EB2FA;
+  height: 30px; 
+  padding: 10px; 
+  border-color: black; 
+  margin: 10px; 
+  text-align: center; 
+  color: black; 
+  cursor: pointer;
+}
+
+button {
+  width: 70px; 
+  height: 50px; 
+  border-radius: 10px;
+  background-color: #5EB2FA;
+  height: 35px; 
+  padding: 10px; 
+  border-color: black; 
+  margin: 10px; 
+  text-align: center; 
+  color: black;
+  cursor: pointer;
+}
+
+.display-list {
+  padding: 10px;
+  text-align: center; 
+  font-size: 20px; 
+  margin: auto;
+  width: 620px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.display-item {
+  display: inline-block;
+  width: 400px;
+  padding: 5px;
+  background-color: whitesmoke;
+  border-color: black;
+  border-radius: 10px;
+}
+
+.delete-btn {
+  display: inline-block;
+  width: 100px;
+  padding: 5px;
+}
